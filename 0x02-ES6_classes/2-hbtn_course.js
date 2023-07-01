@@ -5,25 +5,25 @@ export default class HolbertonCourse {
     this._students = students;
   }
 
-  verifyString(name) {
-    if (typeof name !== "string") {
-      throw new TypeError("Name must be a string.");
+  verifyString(value) {
+    if (typeof value !== 'string') {
+      throw new TypeError('Name must be a string.');
     }
-    return name;
+    return value;
   }
 
-  verifyNumber(length) {
-    if (typeof length !== "number") {
-      throw new TypeError("Length must be a number.");
+  verifyNumber(value) {
+    if (typeof value !== 'number') {
+      throw new TypeError('Length must be a number.');
     }
-    return length;
+    return value;
   }
 
-  verifyArray(students) {
-    if (!Array.isArray(students)) {
-      throw new TypeError(" must be an array.");
+  verifyArray(value) {
+    if (!Array.isArray(value)) {
+      throw new TypeError('Students must be an array.');
     }
-    return students;
+    return value;
   }
 
   get name() {
