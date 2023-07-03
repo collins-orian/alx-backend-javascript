@@ -6,6 +6,7 @@
  * of each item in the set.
  * @returns {String}
  */
+
 export default function cleanSet(set, startString) {
   const parts = [];
   if (
