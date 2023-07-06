@@ -1,4 +1,4 @@
-interface Student {
+export interface Student {
 	firstName: string;
 	lastName: string;
 	age: number;
@@ -19,11 +19,11 @@ const student2: Student = {
 	location: "London",
 };
 
-const studentsList: Student[] = [student1, student2];
+const studentsList: Array<Student> = [student1, student2];
 
 const table = document.createElement("table");
 
-studentsList.forEach((student) => {
+studentsList.forEach((student: Student) => {
 	const row = document.createElement("tr");
 	const firstNameCell = document.createElement("td");
 	const locationCell = document.createElement("td");
