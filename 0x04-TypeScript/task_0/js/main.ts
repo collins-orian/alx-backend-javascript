@@ -6,27 +6,27 @@ export interface Student {
 }
 
 const student1: Student = {
-	firstName: "John",
-	lastName: "Doe",
+	firstName: 'John',
+	lastName: 'Doe',
 	age: 20,
-	location: "New York",
+	location: 'New York',
 };
 
 const student2: Student = {
-	firstName: "Jane",
-	lastName: "Smith",
+	firstName: 'Jane',
+	lastName: 'Smith',
 	age: 22,
-	location: "London",
+	location: 'London',
 };
 
 const studentsList: Array<Student> = [student1, student2];
 
-const table = document.createElement("table");
+const table = document.createElement('table');
 
 studentsList.forEach((student: Student) => {
-	const row = document.createElement("tr");
-	const firstNameCell = document.createElement("td");
-	const locationCell = document.createElement("td");
+	const row = document.createElement('tr');
+	const firstNameCell = document.createElement('td');
+	const locationCell = document.createElement('td');
 
 	firstNameCell.textContent = student.firstName;
 	locationCell.textContent = student.location;
